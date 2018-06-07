@@ -38,4 +38,9 @@ file(GLOB LIB_SRC
 #
 set (LIB_NAME ${PROJECT_NAME}${PROJECT_VERSION_MAJOR})
 add_library(${LIB_NAME} SHARED ${LIB_SRC})
+
+find_library(pigpiod_if2_LIB pigpiod_if2)
+target_link_libraries(${LIB_NAME} ${pigpiod_if2_LIB})
+
 install(TARGETS ${LIB_NAME} LIBRARY DESTINATION .)
+
