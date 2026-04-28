@@ -1,3 +1,8 @@
+<!-- ghmig:moved -->
+> **This repository has moved to [https://git.navicore.tech/navicore/pwm-led-example](https://git.navicore.tech/navicore/pwm-led-example).**
+>
+> The GitHub copy is archived and no longer maintained.
+
 PWM LED Example
 -----
 
@@ -26,4 +31,3 @@ java -jar target/scala-2.12/PwmLedExample.jar
 1. `sbt javah test`
 1. `sbt javah run`
 1. `sbt javah assembly` to create superjar `target/scala-2.12/PwmLedExample.jar`
-
